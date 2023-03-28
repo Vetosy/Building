@@ -105,3 +105,81 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.main-title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: 1px;
+  color: var(--color-ebony);
+  text-transform: uppercase;
+  &--home {
+    color: var(--color-light);
+  }
+  span {
+    color: var(--color-primary);
+  }
+}
+
+.main-descr {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-storm);
+  &--home {
+    color: var(--color-light);
+    margin-bottom: 60px;
+  }
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 39px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-light);
+  border-radius: 4px;
+  &--fill {
+    background-color: var(--color-primary);
+  }
+  &--stroke {
+    &-light {
+      border-color: var(--color-light);
+    }
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 60px;
+  color: var(--color-ebony);
+  &--center {
+    text-align: center;
+  }
+}
+
+.descr {
+  margin: 0;
+  margin-bottom: 59px;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--color-storm);
+  &--center {
+    text-align: center;
+  }
+}
+
+
+.section-offset {
+  padding-top: 120px;
+}

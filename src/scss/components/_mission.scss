@@ -1,5 +1,6 @@
 .mission {
   background-color: var(--color-light);
+
   &__list {
     --mission-gap: 94px;
     display: grid;
@@ -7,6 +8,7 @@
     gap: calc(var(--mission-gap) * 2);
     margin-bottom: 27px;
   }
+
   &__item {
     position: relative;
     text-align: center;
@@ -14,6 +16,7 @@
     background-repeat: no-repeat;
     background-size: 48px 48px;
     background-position: top center;
+
     &:not(:last-child) {
       &::after {
         content: "";
@@ -28,16 +31,20 @@
         background-position: center center;
       }
     }
+
     &--quality {
       background-image: url(../img/quality.svg);
     }
+
     &--safety {
       background-image: url(../img/safety.svg);
     }
+
     &--comfort {
       background-image: url(../img/comfort.svg);
     }
   }
+
   &__subtitle {
     margin: 0;
     margin-bottom: 8px;
@@ -46,12 +53,14 @@
     line-height: 30px;
     color: var(--color-ebony);
   }
+
   &__descr {
     margin: 0;
     font-size: 16px;
     line-height: 26px;
     color: var(--color-storm);
   }
+
   .know-form {
     position: relative;
     top: 92px;
@@ -62,6 +71,7 @@
       0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
     padding: 48px 60px;
+
     &__title {
       margin: 0;
       margin-bottom: 33px;
@@ -71,13 +81,16 @@
       line-height: 42px;
       color: var(--color-ebony);
     }
+
     &__content {
       display: flex;
       align-items: flex-end;
     }
+
     &__field {
       margin-right: 24px;
     }
+
     &__btn {
       padding: 11px 29px;
     }

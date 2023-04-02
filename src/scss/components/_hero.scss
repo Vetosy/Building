@@ -8,6 +8,7 @@
   background-position: center center;
   position: relative;
   z-index: 1;
+
   &::after {
     content: "";
     position: absolute;
@@ -18,11 +19,13 @@
     background-color: rgba(30, 33, 44, 0.6);
     z-index: 2;
   }
+
   &__content {
     max-width: 577px;
     position: relative;
     z-index: 3;
   }
+
   &__btns {
     .btn {
       &:not(:last-child) {

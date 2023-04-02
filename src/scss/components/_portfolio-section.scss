@@ -1,28 +1,34 @@
 .portfolio-section {
   background-color: var(--color-light);
   padding-bottom: 120px;
+
   &__title {
     margin: 0;
     padding-bottom: 12px;
     max-width: 710px;
   }
+
   &__slider-nav {
     transform: translateX(11px);
   }
+
   &__top {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 48px;
   }
+
   &__items {
     margin: 0 -30px -21px;
     padding: 0 30px 100px;
   }
+
   &__learn {
     margin-top: 1px;
   }
 }
+
 .portfolio-item {
   overflow: hidden;
   display: flex;
@@ -33,11 +39,13 @@
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
+
   &__content {
     @include flex-column-center;
     padding: 16px 10px;
     padding-bottom: 23px;
   }
+
   &__title {
     margin: 0;
     margin-bottom: 5px;
@@ -46,12 +54,14 @@
     line-height: 30px;
     color: var(--color-ebony);
   }
+
   &__descr {
     display: inline-block;
     font-size: 14px;
     line-height: 21px;
     color: var(--color-storm);
   }
+
   &__btn {
     display: none;
     margin-top: 24px;

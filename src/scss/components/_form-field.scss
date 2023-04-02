@@ -1,11 +1,13 @@
 .form-field {
   @include flex-column-start;
+
   &__caption {
     margin-bottom: 7px;
     font-size: 14px;
     line-height: 21px;
     color: var(--color-gray);
   }
+
   &__input {
     background-color: #f4f5f7;
     border: 1px solid #d7dadd;
@@ -16,12 +18,15 @@
     border-radius: 4px;
     font-size: 14px;
     line-height: 21px;
+
     &::placeholder {
       color: #9a9ca5;
     }
   }
+
   &--big {
     flex-grow: 1;
+
     .form-field__input {
       width: 100%;
     }

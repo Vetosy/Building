@@ -2,16 +2,19 @@
   &__list {
     @include flex-v-center;
   }
+
   &__item {
     &:not(:last-child) {
       margin-right: 40px;
     }
   }
+
   &__link {
     font-weight: 700;
     font-size: 16px;
     line-height: 26px;
     color: var(--color-gray);
+
     &:hover {
       transition: color 0.3s ease;
       color: var(--color-primary);

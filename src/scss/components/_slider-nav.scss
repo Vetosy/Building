@@ -2,6 +2,7 @@
   position: relative;
   z-index: 15;
   @include flex-v-center;
+
   &__btn {
     @include flex-all-center;
     border-radius: 50%;
@@ -9,10 +10,12 @@
     height: 48px;
     color: var(--color-gray);
     transition: background-color 0.3s ease, color 0.3s ease;
+
     &:hover {
       color: var(--color-light);
       background-color: var(--color-primary);
     }
+
     svg {
       display: block;
       width: 18px;

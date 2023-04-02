@@ -5,15 +5,18 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
   &__list {
     margin-bottom: 79px;
   }
 }
+
 .services-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--grid-gap);
 }
+
 .services-item {
   display: block;
   position: relative;
@@ -25,6 +28,7 @@
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   border-radius: 4px;
   padding: 89px 10px;
+
   &::before {
     content: "";
     position: absolute;
@@ -41,6 +45,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -54,43 +59,53 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
+
   &:hover {
+
     &::before,
     &::after {
       opacity: 1;
     }
+
     .services-item__icon {
       fill: var(--color-light);
     }
+
     .services-item__title {
       color: var(--color-light);
     }
   }
+
   &--construction {
     &::before {
       background-image: url(../img/construction-services.jpg);
     }
   }
+
   &--project {
     &::before {
       background-image: url(../img/project-services.jpg);
     }
   }
+
   &--design {
     &::before {
       background-image: url(../img/design-services.jpg);
     }
   }
+
   &--repairs {
     &::before {
       background-image: url(../img/repairs-services.jpg);
     }
   }
+
   &__content {
     @include flex-column-center;
     position: relative;
     z-index: 10;
   }
+
   &__icon {
     margin-bottom: 25px;
     width: 52px;
@@ -99,6 +114,7 @@
     fill: var(--color-primary);
     transition: fill 0.3s ease;
   }
+
   &__title {
     margin: 0;
     font-weight: 700;

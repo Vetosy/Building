@@ -1,2 +1,2 @@
-import "./components/swiper";
-import "./components/progress";
+import './components/swiper';
+import './components/progress';

@@ -7,10 +7,17 @@
   }
 
   &__nav {
-    margin-left: -112px;
+    margin-left: -95px;
   }
 
   &--main {
     background-color: var(--color-light);
+  }
+
+  &--secondary {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 }

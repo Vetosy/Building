@@ -1,6 +1,7 @@
 import Swiper, {
   Navigation
 } from 'swiper';
+
 Swiper.use([Navigation]);
 
 const bodyStyle = window.getComputedStyle(document.body);

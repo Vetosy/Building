@@ -20,6 +20,16 @@
     letter-spacing: 1px;
     color: var(--color-ebany);
     text-transform: uppercase;
+
+    &--small {
+      font-size: 64px;
+      line-height: 77px;
+      text-transform: initial;
+    }
+
+    &--mb {
+      margin-bottom: 59px;
+    }
   }
 
   &__text {
@@ -40,5 +50,11 @@
 
   &--work {
     background-image: url(../img/work-hero-bg.png);
+  }
+
+  &--work-inner {
+    background-color: var(--color-light);
+    background-image: url(../img/work-inner-hero-bg.png);
+      background-position: right -8px top 48px;
   }
 }

@@ -79,3 +79,18 @@
       },
     });
   }
+
+
+  const similarprojectsItems = document.querySelector('.similar-projects__items')
+
+  if (similarprojectsItems) {
+    const similarprojectsSlider = new Swiper(similarprojectsItems, {
+      slidesPerView: 3,
+      spaceBetween: gap,
+      loop: false,
+      navigation: {
+        nextEl: '.similar-projects__next',
+        prevEl: '.similar-projects__prev',
+      },
+    });
+  }

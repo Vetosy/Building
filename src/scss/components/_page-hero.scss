@@ -55,11 +55,15 @@
   &--work-inner {
     background-color: var(--color-light);
     background-image: url(../img/work-inner-hero-bg.png);
-      background-position: right -8px top 48px;
+    background-position: right -8px top 48px;
   }
-
 
   &--about {
     background-image: url(../img/about-hero-bg.png);
+  }
+
+  &--positions {
+    background-image: url(../img/positions-hero-bg.png);
+    background-position: right -10px bottom;
   }
 }

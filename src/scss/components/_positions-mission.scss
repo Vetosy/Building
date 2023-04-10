@@ -1,0 +1,64 @@
+.positions-mission {
+  padding-top: 80px;
+  padding-bottom: 180px;
+  background-color: var(--color-light);
+
+  &__list {
+    --mission-gap: 94px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+    text-align: center;
+    padding-top: 72px;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    background-position: top center;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: calc(-1 * var(--mission-gap));
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background-image: url(../img/divider.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+
+    &--training {
+      background-image: url(../img/training.svg);
+    }
+
+    &--growth {
+      background-image: url(../img/growth.svg);
+    }
+
+    &--salary {
+      background-image: url(../img/salary.svg);
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-ebony);
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--color-storm);
+  }
+}

@@ -28,8 +28,17 @@
     color: var(--color-ebony);
     transition: color 0.3s ease;
 
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
     &:hover {
       color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
     }
   }
 
@@ -81,5 +90,20 @@
       background-repeat: no-repeat;
       padding-left: 23px;
     }
+  }
+}
+
+.article-meta a {
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  &:active {
+    color: var(--color-active);
   }
 }

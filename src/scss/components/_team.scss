@@ -58,6 +58,20 @@
       line-height: 27px;
       color: var(--color-primary);
       border-bottom: 1px solid currentColor;
+      transition: color 0.3s ease;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--color-active);
+      }
+
+      &:active {
+        color: var(--color-active);
+      }
     }
   }
 }

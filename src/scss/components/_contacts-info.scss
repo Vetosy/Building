@@ -55,6 +55,20 @@
     border-bottom: 1px solid currentColor;
     font-size: 16px;
     color: var(--color-primary);
+    transition: color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-active);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 
   &__element {
@@ -69,6 +83,23 @@
 
   &__value {
     color: var(--color-ebony);
+  }
+
+  .contacts-info__value {
+    transition: color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 
   &__soc {
@@ -91,6 +122,18 @@
       svg {
         opacity: 1;
         fill: var(--color-storm);
+      }
+
+      &:hover {
+        svg {
+          fill: var(--color-primary);
+        }
+      }
+
+      &:active {
+        svg {
+          fill: var(--color-active);
+        }
       }
     }
   }

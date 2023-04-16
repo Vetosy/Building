@@ -99,6 +99,22 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 36px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-light);
+      background-color: var(--color-active);
+    }
   }
 
   &__check {

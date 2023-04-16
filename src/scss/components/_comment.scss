@@ -34,6 +34,20 @@
     a {
       font-weight: 700;
       color: var(--color-primary);
+      transition: color 0.3s ease;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--color-active);
+      }
+
+      &:active {
+        color: var(--color-active);
+      }
     }
 
     * {
@@ -51,6 +65,7 @@
     font-size: 14px;
     line-height: 21px;
     color: var(--color-storm);
+    transition: color 0.3s ease;
 
     svg {
       position: relative;
@@ -61,6 +76,19 @@
       height: 16px;
       object-fit: cover;
       fill: currentColor;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
     }
   }
 }

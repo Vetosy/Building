@@ -42,6 +42,19 @@
     }
   }
 
+  .portfolio-tabs-nav__btn {
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      .portfolio-tabs-nav__text {
+        color: var(--color-ebony);
+      }
+    }
+  }
+
   &__icon {
     margin-bottom: 16px;
     display: block;
@@ -85,6 +98,7 @@
   font-size: 16px;
   line-height: 26px;
   color: var(--color-gray);
+  transition: color 0.3s ease;
 
   svg {
     margin-right: 16px;
@@ -93,5 +107,18 @@
     object-fit: cover;
     color: inherit;
     fill: currentColor;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: var(--color-primary);
+  }
+
+  &:active {
+    color: var(--color-active);
   }
 }

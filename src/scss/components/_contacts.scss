@@ -72,6 +72,11 @@
     width: 100%;
   }
 
+  .is-focused {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
   .choices__inner {
     padding: 0;
     margin: 0;

@@ -26,7 +26,20 @@
     font-size: 16px;
     line-height: 26px;
     color: #9a9ca5;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
 
     &--active {
       color: var(--color-primary);
@@ -66,7 +79,7 @@
     font-size: 16px;
     line-height: 26px;
     color: var(--color-gray);
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease;
 
     svg {
       display: block;
@@ -74,6 +87,19 @@
       height: 11px;
       fill: currentColor;
       object-fit: cover;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
     }
 
     &--active {

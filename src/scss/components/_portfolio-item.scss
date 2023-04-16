@@ -5,6 +5,7 @@
   background-color: var(--color-light);
   box-shadow: var(--main-shadow);
   border-radius: 4px;
+  transition: transform 0.3s ease;
 
   &__content {
     @include flex-column-center;
@@ -39,5 +40,14 @@
     color: var(--color-primary);
     border: 1px solid currentColor;
     border-radius: 4px;
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    transform: translateY(-10px);
   }
 }

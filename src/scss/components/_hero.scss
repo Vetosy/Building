@@ -108,7 +108,6 @@
   padding-top: 220px;
   padding-bottom: 353px;
   background-color: var(--color-gray);
-  background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -124,5 +123,21 @@
     bottom: 0;
     background-color: rgba(30, 33, 44, 0.6);
     z-index: 2;
+  }
+
+  &--one {
+    background-image: url(../img/hero-bg-1.jpg);
+  }
+
+  &--two {
+    background-image: url(../img/hero-bg-2.jpg);
+  }
+
+  &--three {
+    background-image: url(../img/hero-bg-3.jpg);
+  }
+
+  &--four {
+    background-image: url(../img/hero-bg-4.jpg);
   }
 }

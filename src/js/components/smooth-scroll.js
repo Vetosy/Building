@@ -4,7 +4,15 @@ const scroll = new SmoothScroll('.to-top', {
   speed: 500
 });
 const toTop = document.querySelector('.to-top')
-const heroHeight = document.querySelector('.hero').offsetHeight;
+let heroHeight;
+
+if (document.querySelector('.hero')) {
+  heroHeight = document.querySelector('.hero').offsetHeight;
+}
+
+if (document.querySelector('.page-hero')) {
+  heroHeight = document.querySelector('.page-hero').offsetHeight;
+}
 
 const isVisibleToTop = (y = 0) => {
   if (y >= heroHeight) {

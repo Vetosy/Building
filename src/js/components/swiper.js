@@ -50,13 +50,21 @@ const portfolioSectionItems = document.querySelector('.portfolio-section__items'
 
 if (portfolioSectionItems) {
   const portfolioSlider = new Swiper(portfolioSectionItems, {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: gap,
     loop: false,
     navigation: {
       nextEl: '.portfolio-section__next',
       prevEl: '.portfolio-section__prev',
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
   });
 }
 

@@ -51,4 +51,8 @@
     letter-spacing: 0.5px;
     padding: 12px 32px;
   }
+
+  @include mobile {
+    padding: 15px;
+  }
 }

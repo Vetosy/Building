@@ -8,6 +8,10 @@
       margin-right: 35px;
     }
   }
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .contacts-link {
@@ -45,6 +49,10 @@
     line-height: 27px;
     color: var(--color-ebony);
     transition: color 0.3s ease;
+
+    @include minidesk {
+      font-size: 16px;
+    }
   }
 
   &--call {

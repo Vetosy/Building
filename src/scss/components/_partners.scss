@@ -7,6 +7,18 @@
     grid-template-columns: repeat(6, 1fr);
     column-gap: 102px;
     row-gap: 40px;
+
+    @include minidesk {
+      column-gap: var(--grid-gap);
+    }
+  }
+
+  &__item {
+    @include minidesk {
+      grid-column: 3 span;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__title {

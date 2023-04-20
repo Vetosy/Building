@@ -42,6 +42,10 @@
     border-radius: 4px;
     transition: 0.3s ease;
     will-change: margin;
+
+    @include minitablet {
+      margin-bottom: 0;
+    }
   }
 
   &:focus {

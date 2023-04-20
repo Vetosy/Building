@@ -9,6 +9,15 @@
 
   &__content {
     max-width: 612px;
+
+    @include tablet {
+      max-width: 450px;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: none;
+    }
   }
 
   &__title {
@@ -31,6 +40,7 @@
     max-width: 495px;
     height: 550px;
     z-index: 1;
+    object-fit: cover;
 
     img {
       display: block;
@@ -38,6 +48,24 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @include minidesk {
+      width: 380px;
+      height: auto;
+    }
+
+    @include tablet {
+      width: 300px;
+    }
+
+    @include minitablet {
+      display: none;
+    }
+  }
+
+  @include minitablet {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 

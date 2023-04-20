@@ -12,6 +12,10 @@
     background-color: var(--color-light);
     transform: translateY(-50%);
     z-index: 10;
+
+    @include middle {
+      display: none !important;
+    }
   }
 
   &__prev {
@@ -21,6 +25,10 @@
     background-color: var(--color-light);
     transform: translateY(-50%);
     z-index: 10;
+
+    @include middle {
+      display: none !important;
+    }
   }
 
   &__pag {
@@ -52,6 +60,27 @@
       &::after {
         display: none;
       }
+
+      @include minitablet {
+        width: 25%;
+      }
+    }
+
+    @include middle {
+      left: 3% !important;
+    }
+
+    @include minidesk {
+      left: 15px !important;
+    }
+
+    @include minitablet {
+      width: calc(100% - 30px) !important;
+      bottom: 50px !important;
+    }
+
+    @include mobile {
+      display: none;
     }
   }
 
@@ -80,6 +109,11 @@
     .btn {
       &:not(:last-child) {
         margin-right: 19px;
+
+        @include mobile {
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -139,5 +173,15 @@
 
   &--four {
     background-image: url(../img/hero-bg-4.jpg);
+  }
+
+  @include minitablet {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }

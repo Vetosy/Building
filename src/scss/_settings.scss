@@ -125,6 +125,16 @@ a {
   span {
     color: var(--color-primary);
   }
+
+  @include minitablet {
+    font-size: 60px;
+    line-height: 75px;
+  }
+
+  @include mobile {
+    font-size: 35px;
+    line-height: 45px;
+  }
 }
 
 .main-descr {
@@ -136,6 +146,11 @@ a {
   &--home {
     color: var(--color-light);
     margin-bottom: 60px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -212,6 +227,11 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .descr {
@@ -224,10 +244,24 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
 }
 
 .section-offset {
   padding-top: 120px;
+
+  @include minitablet {
+    padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-top: 40px;
+  }
 }
 
 .custom-checkbox {
@@ -371,6 +405,10 @@ a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: var(--grid-gap);
+
+  @include mobile {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .to-top {
@@ -418,6 +456,11 @@ a {
     &:hover {
       background-color: var(--color-active);
     }
+  }
+
+  @include middle {
+    right: 20px;
+    bottom: 20px;
   }
 }
 
@@ -519,4 +562,8 @@ a {
   .choices__list--dropdown .choices__item--selectable::after {
     display: none;
   }
+}
+
+.burger {
+  @include burger;
 }

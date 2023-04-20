@@ -8,6 +8,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
     margin-bottom: 27px;
+
+    @include tablet {
+      --mission-gap: 30px;
+    }
+
+    @include minitablet {
+      --mission-gap: 10px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -43,6 +55,12 @@
 
     &--comfort {
       background-image: url(../img/comfort.svg);
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -83,6 +101,30 @@
     &__content {
       display: flex;
       align-items: flex-end;
+
+      @include tablet {
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & > * {
+          margin-right: 0 !important;
+          margin-bottom: 20px;
+          width: 49%;
+          flex-grow: initial;
+
+          .form-field__input {
+            width: 100%;
+          }
+
+          @include mobile {
+            width: 100%;
+          }
+        }
+      }
+
+      @include mobile {
+        display: block;
+      }
     }
 
     &__field {
@@ -91,6 +133,11 @@
 
     &__btn {
       padding: 11px 29px;
+    }
+
+    @include mobile {
+      top: initial;
+      padding: 10px 15px;
     }
   }
 }

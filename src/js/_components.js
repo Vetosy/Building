@@ -6,3 +6,4 @@ import './components/selects';
 import './components/video';
 import './components/smooth-scroll';
 import './components/modal';
+import './components/burger';

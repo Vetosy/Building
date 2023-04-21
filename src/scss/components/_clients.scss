@@ -7,9 +7,26 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 102px;
+
+    @include minidesk {
+      column-gap: var(--grid-gap);
+    }
+  }
+
+  &__item {
+    @include minidesk {
+      grid-column: 3 span;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__title {
     margin-bottom: 60px;
+  }
+
+
+  @include mobile {
+    padding: 40px 0;
   }
 }

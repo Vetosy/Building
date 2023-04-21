@@ -3,11 +3,20 @@
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__image {
     flex-shrink: 0;
     margin-right: 20px;
+
+    @include tablet {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -19,6 +28,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__field {
@@ -28,6 +41,14 @@
     &--big {
       width: 100%;
     }
+
+    @include mobile {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
   }
 
   &__bottom {
@@ -35,6 +56,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__checkbox {
@@ -51,6 +77,10 @@
       &::after {
         top: 4px;
       }
+    }
+
+    @include mobile {
+      margin-bottom: 25px;
     }
   }
 
@@ -146,6 +176,10 @@
     &:not(:last-child) {
       margin-right: 22px;
     }
+  }
+
+  @include tablet {
+    width: 100%;
   }
 }
 

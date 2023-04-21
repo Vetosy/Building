@@ -2,6 +2,12 @@
   padding: 120px 0;
   background-color: var(--color-light);
 
+  &__container {
+    @include tablet {
+      display: block;
+    }
+  }
+
   &__img {
     grid-column: 7 span;
   }
@@ -10,6 +16,11 @@
     padding-left: 76px;
     padding-top: 4px;
     grid-column: 5 span;
+
+    @include tablet {
+      padding: 0;
+      padding-top: 25px;
+    }
   }
 
   &__title {

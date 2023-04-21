@@ -38,7 +38,16 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+
+
+        @include tablet {
+          display: none;
+        }
       }
+    }
+
+    @include tablet {
+      grid-column: 6 span;
     }
   }
 

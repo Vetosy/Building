@@ -29,6 +29,22 @@
     &--finish {
       background-image: url(../img/pant.svg);
     }
+
+    @include tablet {
+      grid-column: 6 span;
+    }
+  }
+
+  &__img {
+    @include minidesk {
+      max-width: 45%;
+    }
+
+    @include tablet {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__value {
@@ -37,6 +53,11 @@
     font-size: 46px;
     line-height: 60px;
     color: var(--color-primary);
+
+    @include minidesk {
+      font-size: 36px;
+      line-height: 54px;
+    }
   }
 
   &__text {
@@ -54,6 +75,10 @@
   &__content {
     display: flex;
     align-items: flex-start;
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__info {
@@ -69,6 +94,20 @@
     background-color: var(--color-light);
     box-shadow: var(--main-shadow);
     border-radius: 4px;
+
+    @include minidesk {
+      width: 55%;
+      left: 0;
+      top: 0;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 15px;
+    }
   }
 }
 
@@ -91,6 +130,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
+
+      @include mobile {
+        left: 0;
+      }
     }
 
     p {
@@ -104,6 +147,12 @@
         margin-bottom: 30px;
       }
     }
+
+    @include mobile {
+      padding: 0;
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
   }
 
   &__footer {
@@ -115,6 +164,11 @@
     background-repeat: no-repeat;
     background-size: 100px 68px;
     background-position: right 65px center;
+
+    @include mobile {
+      padding-bottom: 120px;
+      background-position: bottom 30px center;
+    }
   }
 
   &__author {

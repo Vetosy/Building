@@ -1,7 +1,12 @@
 .categories {
   padding-bottom: 180px;
+
   &__title {
     margin-bottom: 39px;
+  }
+
+  @include mobile {
+    padding: 40px 0;
   }
 }
 
@@ -12,6 +17,14 @@
 
   &__item {
     width: calc(100% / 6);
+
+    @include tablet {
+      width: calc(100% / 3);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -45,6 +58,10 @@
       color: var(--color-primary);
       border-color: currentColor;
     }
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
   }
 }
 

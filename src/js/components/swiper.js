@@ -86,13 +86,21 @@ const relatedprojectsItems = document.querySelector('.related-projects__items')
 
 if (relatedprojectsItems) {
   const relatedprojectsSlider = new Swiper(relatedprojectsItems, {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: gap,
     loop: false,
     navigation: {
       nextEl: '.related-projects__next',
       prevEl: '.related-projects__prev',
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
   });
 }
 
@@ -101,7 +109,7 @@ const workImages = document.querySelector('.work-images-slider');
 if (workImages) {
   const workSlider = new Swiper('.work-images-nav', {
     spaceBetween: 20,
-    slidesPerView: 6,
+    slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -131,13 +139,21 @@ const similarprojectsItems = document.querySelector('.similar-projects__items')
 
 if (similarprojectsItems) {
   const similarprojectsSlider = new Swiper(similarprojectsItems, {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: gap,
     loop: false,
     navigation: {
       nextEl: '.similar-projects__next',
       prevEl: '.similar-projects__prev',
     },
+    breakpoints: {
+      576: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 3,
+      }
+    }
   });
 }
 

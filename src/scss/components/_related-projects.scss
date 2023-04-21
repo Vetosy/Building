@@ -11,6 +11,10 @@
 
   &__slider-nav {
     transform: translateX(11px);
+
+    @include mobile {
+      transform: none;
+    }
   }
 
   &__top {
@@ -18,11 +22,22 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    @include mobile {
+      display: block;
+      margin-bottom: 25px;
+    }
   }
 
   &__items {
     margin: 0 -30px -21px;
     padding: 14px 30px 100px;
+
+    .portfolio-item__title {
+      @include minitablet {
+        min-height: 60px;
+      }
+    }
   }
 
   &__learn {

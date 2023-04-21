@@ -13,6 +13,12 @@
     transform: translate(12px, 6px);
   }
 
+  &__content {
+    @include minitablet {
+      display: block;
+    }
+  }
+
   &__item {
     overflow: hidden;
     grid-column: 8 span;
@@ -97,5 +103,13 @@
     &--active {
       color: var(--color-primary);
     }
+
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+
+  @include minitablet {
+    margin-bottom: 25px;
   }
 }

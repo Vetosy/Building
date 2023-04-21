@@ -24,6 +24,10 @@
   border-radius: 4px;
   width: 100%;
   overflow: hidden;
+
+  @include minitablet {
+    overflow-x: auto;
+  }
 }
 
 .table {
@@ -115,6 +119,10 @@
       color: var(--color-light);
       background-color: var(--color-active);
     }
+
+    @include tablet {
+      padding: 0 10px;
+    }
   }
 
   &__check {
@@ -134,5 +142,10 @@
     line-height: 26px;
     color: var(--color-gray);
     text-align: center;
+  }
+
+
+  @include minitablet {
+    width: 1200px;
   }
 }

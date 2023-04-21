@@ -21,6 +21,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
     margin-bottom: 27px;
+
+    @include tablet {
+      --mission-gap: 30px;
+    }
+
+    @include minitablet {
+      --mission-gap: 10px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -43,6 +55,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+
+        @include minitablet {
+          display: none;
+        }
       }
     }
 
@@ -56,6 +72,12 @@
 
     &--control {
       background-image: url(../img/control.svg);
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -78,5 +100,9 @@
   &__btn {
     width: 390px;
     transform: translateY(72px);
+
+    @include mobile {
+      width: 50%;
+    }
   }
 }

@@ -28,4 +28,8 @@
   &__learn {
     margin-top: 1px;
   }
+
+  @include mobile {
+    padding: 40px 0;
+  }
 }

@@ -65,6 +65,12 @@
     background-position: left center;
   }
 
+  &__left {
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+
   &__title {
     margin: 0;
     font-weight: 700;
@@ -95,6 +101,11 @@
       background-color: var(--color-active);
     }
   }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .positions-looking {
@@ -116,6 +127,22 @@
     font-size: 18px;
     line-height: 27px;
     color: var(--color-gray);
+  }
+
+  &__btns {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+
+      .positions-looking__btn--subs {
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+
+      .positions-looking__btn--send {
+        margin-right: 0;
+      }
+    }
   }
 
   &__btn {

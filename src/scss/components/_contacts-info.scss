@@ -10,6 +10,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--contacts-gap) * 2);
     margin-bottom: 118px;
+
+    @include minidesk {
+      --contacts-gap: 40px;
+    }
+
+    @include minitablet {
+      display: block;
+    }
   }
 
   &__item {
@@ -27,6 +35,10 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+      }
+
+      @include minitablet {
+        margin-bottom: 25px;
       }
     }
   }

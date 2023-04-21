@@ -464,6 +464,14 @@ a {
   }
 }
 
+.graph-modal {
+  @include mobile {
+    &::before {
+      display: none;
+    }
+  }
+}
+
 .site-modal {
   width: 486px;
   padding: 48px;
@@ -562,8 +570,32 @@ a {
   .choices__list--dropdown .choices__item--selectable::after {
     display: none;
   }
+
+  @include mobile {
+    width: 90%;
+    padding: 20px;
+    padding-top: 50px;
+  }
 }
 
 .burger {
   @include burger;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  background-color: rgba(#000, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
 }
